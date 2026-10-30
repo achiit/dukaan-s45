@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ANAZÈ COSMETICS | Beauty That Makes You Feel Confident</title>
+<meta name="description" content="Buy premium cosmetics, skincare, makeup, haircare and beauty essentials online from ANAZÈ COSMETICS. Beauty That Makes You Feel Confident." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF6F1;
+  --white:#FFFFFF;
+  --blush:#F6DFDA;
+  --rose:#D98A94;
+  --rose-deep:#B25E6B;
+  --plum:#5C2434;
+  --charcoal:#2B2326;
+  --gold:#C9A227;
+  --muted:#7A6B6F;
+  --radius:18px;
+  --shadow:0 12px 30px rgba(92,36,52,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--cream);
+  color:var(--charcoal);
+  line-height:1.6;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none}
+.container{width:min(1180px,92%);margin:auto}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;letter-spacing:.2px}
+.section{padding:64px 0}
+.section-head{text-align:center;margin-bottom:34px}
+.eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--rose-deep);margin-bottom:10px;font-weight:600;
+}
+.section-head h2{font-size:clamp(30px,5vw,46px);color:var(--plum)}
+.section-head p{color:var(--muted);max-width:620px;margin:10px auto 0}
+
+/* Header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(92,36,52,.08);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-mark{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--plum),var(--rose));
+  color:#fff;display:grid;place-items:center;
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:20px;
+}
+.logo-text strong{display:block;font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--plum)}
+.logo-text span{font-size:10px;letter-spacing:2.4px;color:var(--muted);text-transform:uppercase}
+.nav-links{display:none;gap:26px;font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--rose-deep)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{
+  width:42px;height:42px;border-radius:50%;
+  background:var(--white);border:1px solid rgba(92,36,52,.12);
+  display:grid;place-items:center;position:relative;color:var(--plum);
+}
+.cart-count{
+  position:absolute;top:-4px;right:-4px;min-width:19px;height:19px;
+  background:var(--rose-deep);color:#fff;border-radius:99px;
+  font-size:11px;display:grid;place-items:center;padding:0 5px;
+}
+.menu-btn{display:grid}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .menu-btn{display:none}
+}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 26px;border-radius:99px;font-weight:600;font-size:14px;
+  transition:.25s ease;min-height:46px;
+}
+.btn-primary{background:var(--plum);color:#fff}
+.btn-primary:hover{background:var(--rose-deep);transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--plum);color:var(--plum);background:transparent}
+.btn-outline:hover{background:var(--plum);color:#fff}
+.btn-whatsapp{background:#25D366;color:#fff}
+.btn-rose{background:linear-gradient(135deg,var(--rose),var(--rose-deep));color:#fff}
+.btn-block{width:100%}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(217,138,148,.28),transparent 45%),
+    radial-gradient(circle at 10% 80%,rgba(92,36,52,.14),transparent 40%),
+    linear-gradient(135deg,#FFF9F5,var(--blush));
+}
+.hero-inner{
+  display:grid;gap:36px;align-items:center;
+  padding:58px 0 68px;
+}
+@media(min-width:900px){
+  .hero-inner{grid-template-columns:1.05fr .95fr;padding:90px 0}
+}
+.hero h1{font-size:clamp(38px,7vw,68px);line-height:1.05;color:var(--plum)}
+.hero p{margin:18px 0 28px;color:var(--muted);font-size:17px;max-width:520px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-visual{
+  position:relative;border-radius:32px;overflow:hidden;box-shadow:var(--shadow);
+  aspect-ratio:4/5;background:linear-gradient(145deg,#F7E3DE,#E9C9C6);
+}
+.hero-visual img{width:100%;height:100%;object-fit:cover}
+.hero-badge{
+  position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);
+  padding:12px 16px;border-radius:16px;font-size:13px;font-weight:600;color:var(--plum);
+  box-shadow:var(--shadow);
+}
+.particle{
+  position:absolute;border-radius:50%;background:rgba(217,138,148,.35);
+  animation:float 9s ease-in-out infinite;
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-22px)}
+}
+
+/* Categories */
+.category-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:14px;
+}
+@media(min-width:700px){.category-grid{grid-template-columns:repeat(4,1fr)}}
+.category-card{
+  background:var(--white);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:.3s;text-align:center;
+}
+.category-card:hover{transform:translateY(-6px)}
+.category-card img{height:150px;width:100%;object-fit:cover}
+.category-card div{padding:14px;font-weight:600;color:var(--plum)}
+
+/* Products */
+.product-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:14px;
+}
+@media(min-width:700px){.product-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.product-grid{grid-template-columns:repeat(4,1fr)}}
+.product{
+  background:var(--white);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.3s;
+}
+.product:hover{transform:translateY(-6px)}
+.product-image{position:relative;aspect-ratio:1;overflow:hidden;background:#F3E4E1}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.product:hover .product-image img{transform:scale(1.07)}
+.discount{
+  position:absolute;top:12px;left:12px;background:var(--plum);color:#fff;
+  font-size:11px;font-weight:700;padding:5px 9px;border-radius:99px;
+}
+.product-body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.brand{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--rose-deep)}
+.product h3{font-size:19px;color:var(--plum)}
+.desc{font-size:13px;color:var(--muted)}
+.rating{font-size:12px;color:var(--gold);font-weight:600}
+.price-row{display:flex;align-items:center;gap:8px;margin-top:auto}
+.sale{font-weight:700;color:var(--plum);font-size:17px}
+.original{font-size:13px;color:var(--muted);text-decoration:line-through}
+.stock{font-size:11px;font-weight:600;color:#2E7D32}
+.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.small-btn{
+  padding:11px 8px;border-radius:12px;font-size:12px;font-weight:700;
+  background:var(--blush);color:var(--plum);transition:.2s;
+}
+.small-btn:hover{background:var(--rose);color:#fff}
+.small-btn.dark{background:var(--plum);color:#fff}
+.small-btn.dark:hover{background:var(--rose-deep)}
+.added{
+  position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);
+  background:var(--plum);color:#fff;padding:12px 20px;border-radius:99px;
+  font-size:14px;font-weight:600;opacity:0;pointer-events:none;z-index:90;
+  transition:.3s;
+}
+.added.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Offers */
+.offers{
+  background:linear-gradient(135deg,var(--plum),#7B3A4B);
+  color:#fff;border-radius:28px;padding:44px 24px;text-align:center;
+}
+.offers h2{font-size:clamp(30px,5vw,44px)}
+.offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+@media(min-width:800px){.offer-grid{grid-template-columns:repeat(3,1fr)}}
+.offer{
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
+  border-radius:18px;padding:22px 16px;
+}
+.offer strong{display:block;font-family:'Cormorant Garamond',serif;font-size:24px}
+.offer span{font-size:13px;opacity:.85}
+
+/* Why choose */
+.values{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:800px){.values{grid-template-columns:repeat(3,1fr)}}
+.value{
+  background:var(--white);border-radius:var(--radius);padding:24px;
+  box-shadow:var(--shadow);text-align:center;
+}
+.value span{font-size:26px}
+.value h3{font-size:18px;color:var(--plum);margin-top:8px}
+.value p{font-size:13px;color:var(--muted)}
+
+/* Reviews */
+.reviews{display:grid;gap:14px}
+@media(min-width:800px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{
+  background:var(--white);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);
+}
+.review-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.avatar{
+  width:42px;height:42px;border-radius:50%;background:var(--blush);
+  display:grid;place-items:center;font-weight:700;color:var(--plum);
+}
+.review p{font-size:14px;color:var(--muted)}
+
+/* WhatsApp CTA */
+.whatsapp-cta{
+  background:linear-gradient(135deg,#E9F8EE,#F6DFDA);
+  border-radius:28px;padding:44px 24px;text-align:center;
+}
+.whatsapp-cta h2{color:var(--plum);font-size:clamp(28px,5vw,42px)}
+.whatsapp-cta p{color:var(--muted);margin:10px 0 24px}
+
+/* Footer */
+footer{background:var(--plum);color:#F6E7E4;padding:56px 0 110px;margin-top:64px}
+.footer-grid{display:grid;gap:30px}
+@media(min-width:800px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+footer h4{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:14px}
+footer a,footer p{font-size:14px;color:rgba(246,231,228,.82);display:block;margin-bottom:9px}
+footer a:hover{color:#fff}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.15);margin-top:34px;padding-top:20px;
+  font-size:12px;text-align:center;color:rgba(246,231,228,.7);
+}
+
+/* Floating actions */
+.floating-whatsapp{
+  position:fixed;right:16px;bottom:78px;z-index:60;
+  width:54px;height:54px;border-radius:50%;background:#25D366;color:#fff;
+  display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+.mobile-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:55;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(12px);
+  border-top:1px solid rgba(92,36,52,.1);
+  display:grid;grid-template-columns:repeat(3,1fr);
+}
+.mobile-bar a{
+  padding:13px 6px;text-align:center;font-size:12px;font-weight:700;color:var(--plum);
+}
+@media(min-width:900px){
+  .mobile-bar{display:none}
+  .floating-whatsapp{bottom:24px}
+}
+
+/* Cart drawer */
+.drawer{
+  position:fixed;inset:0;z-index:80;display:none;
+}
+.drawer.open{display:block}
+.drawer-overlay{position:absolute;inset:0;background:rgba(43,35,38,.5)}
+.drawer-panel{
+  position:absolute;right:0;top:0;bottom:0;width:min(420px,92%);
+  background:var(--white);padding:22px;overflow:auto;
+  animation:slide .3s ease;
+}
+@keyframes slide{from{transform:translateX(30px);opacity:.4}to{transform:none;opacity:1}}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.cart-item{display:grid;grid-template-columns:70px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid #eee}
+.cart-item img{width:70px;height:70px;object-fit:cover;border-radius:12px}
+.qty{display:flex;align-items:center;gap:8px;margin-top:6px}
+.qty button{width:28px;height:28px;border-radius:8px;background:var(--blush);font-weight:700}
+.cart-summary{margin-top:20px;background:var(--cream);padding:18px;border-radius:16px}
+.summary-row{display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px}
+.total{font-size:18px;font-weight:800;color:var(--plum);border-top:1px solid #E7D6D3;padding-top:10px}
+
+/* Checkout */
+.checkout{display:grid;gap:22px}
+@media(min-width:900px){.checkout{grid-template-columns:1.2fr .8fr}}
+.form-card,.summary-card{
+  background:var(--white);border-radius:22px;padding:24px;box-shadow:var(--shadow);
+}
+.field{margin-bottom:14px}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+input,select,textarea{
+  width:100%;padding:13px 14px;border-radius:12px;
+  border:1px solid #E3D3D0;background:#FFFDFC;font-size:15px;
+}
+input:focus,select:focus{outline:2px solid var(--rose);border-color:transparent}
+.error{color:#C62828;font-size:12px;margin-top:5px;display:none}
+.field.invalid input{border-color:#C62828}
+.field.invalid .error{display:block}
+.payment-options{display:grid;gap:10px;margin-top:8px}
+.payment-option{
+  display:flex;align-items:center;gap:10px;padding:14px;border:1px solid #E3D3D0;
+  border-radius:12px;font-size:14px;font-weight:600;
+}
+.hidden{display:none!important}
+
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(24px);transition:.8s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <div class="logo-mark">A</div>
+      <div class="logo-text">
+        <strong>ANAZÈ</strong>
+        <span>Cosmetics</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#offers">Offers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="focusSearch()" aria-label="Search">🔍</button>
+      <button class="icon-btn" onclick="openCart()" aria-label="Cart">
+        🛍️
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a class="icon-btn" href="https://wa.me/919391973737?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20cosmetics%20products." target="_blank" aria-label="WhatsApp">💬</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="reveal">
+      <span class="eyebrow">ANAZÈ COSMETICS</span>
+      <h1>Beauty That Makes You Feel Confident.</h1>
+      <p>Discover quality cosmetics and beauty essentials at the best prices. Curated skincare, makeup, haircare and more.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">SHOP NOW</a>
+        <a href="#offers" class="btn btn-outline">VIEW OFFERS</a>
+        <a href="https://wa.me/919391973737?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20cosmetics%20products." target="_blank" class="btn btn-whatsapp">WHATSAPP US</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=70" alt="Premium ANAZÈ Cosmetics beauty products arranged elegantly" />
+      <div class="hero-badge">✨ Premium Beauty Essentials</div>
+      <div class="particle" style="width:60px;height:60px;top:12%;left:8%"></div>
+      <div class="particle" style="width:34px;height:34px;bottom:20%;right:12%;animation-delay:1.5s"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Explore</span>
+      <h2>Shop By Category</h2>
+      <p>Find your beauty essentials across carefully curated collections.</p>
+    </div>
+    <div class="category-grid" id="categoryGrid"></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Bestsellers</span>
+      <h2>Featured Beauty Essentials</h2>
+      <p>
+        <input id="searchInput" oninput="renderProducts()" placeholder="Search products, brands or categories…" 
+        style="max-width:420px;margin:auto" />
+      </p>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="section" id="offers">
+  <div class="container">
+    <div class="offers reveal">
+      <span class="eyebrow" style="color:#F8D9DC">Limited Time</span>
+      <h2>SPECIAL OFFERS</h2>
+      <p style="opacity:.85">Limited-Time Beauty Deals</p>
+      <div class="offer-grid">
+        <div class="offer"><strong>UP TO 30% OFF</strong><span>On selected beauty essentials</span></div>
+        <div class="offer"><strong>BUY 2 GET 1</strong><span>On eligible combo products</span></div>
+        <div class="offer"><strong>FREE SHIPPING</strong><span>On orders above ₹999</span></div>
+        <div class="offer"><strong>NEW CUSTOMER</strong><span>Special first-order discount</span></div>
+        <div class="offer"><strong>COMBO OFFERS</strong><span>Curated beauty value packs</span></div>
+        <div class="offer"><strong>FESTIVAL OFFERS</strong><span>Seasonal beauty deals</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Promise</span>
+      <h2>Why Choose ANAZÈ?</h2>
+    </div>
+    <div class="values">
+      <div class="value"><span>✓</span><h3>Genuine Products</h3><p>Quality beauty products you can trust.</p></div>
+      <div class="value"><span>₹</span><h3>Best Prices</h3><p>Premium beauty at accessible prices.</p></div>
+      <div class="value"><span>🔒</span><h3>Secure Payment</h3><p>Safe and encrypted online payments.</p></div>
+      <div class="value"><span>🚚</span><h3>Fast Delivery</h3><p>Carefully packed and promptly shipped.</p></div>
+      <div class="value"><span>💬</span><h3>WhatsApp Support</h3><p>Beauty guidance whenever you need it.</p></div>
+      <div class="value"><span>↩️</span><h3>Easy Returns*</h3><p>*Terms and conditions apply.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Loved By Customers</span>
+      <h2>Customer Reviews</h2>
+      <p>Sample reviews shown for demonstration. Replace with genuine customer feedback.</p>
+    </div>
+    <div class="reviews" id="reviewGrid"></div>
+  </div>
+</section>
+
+<!-- WHATSAPP CTA -->
+<section class="section">
+  <div class="container">
+    <div class="whatsapp-cta reveal">
+      <h2>Need Help Choosing a Product?</h2>
+      <p>Chat with our beauty experts on WhatsApp.</p>
+      <a class="btn btn-whatsapp" target="_blank"
+        href="https://wa.me/919391973737?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20cosmetics%20products.">
+        CHAT ON WHATSAPP
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKOUT -->
+<section class="section hidden" id="checkoutSection">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Secure Checkout</span>
+      <h2>Complete Your Order</h2>
+    </div>
+    <div class="checkout">
+      <form class="form-card" id="checkoutForm" novalidate>
+        <div class="field">
+          <label>Full Name</label>
+          <input id="fullName" placeholder="Enter your full name" />
+          <div class="error">Please enter your full name.</div>
+        </div>
+        <div class="field">
+          <label>Mobile Number</label>
+          <input id="phone" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" />
+          <div class="error">Please enter a valid 10-digit mobile number.</div>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input id="email" type="email" placeholder="your@email.com" />
+          <div class="error">Please enter a valid email address.</div>
+        </div>
+        <div class="field">
+          <label>House / Flat Number</label>
+          <input id="house" placeholder="House / Flat number" />
+          <div class="error">Please enter your house or flat number.</div>
+        </div>
+        <div
